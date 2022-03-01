@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Flight Booker</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <div class="flight-booker">
+            <select class="flight-booker__select js-trip-type__select">
+                <option class="flight-booker__select__option js-trip-type__select__option_one-way" selected value="one-way">one-way flight</option>
+                <option class="flight-booker__select__option js-trip-type__select__option_return" value="return">return flight</option>
+            </select>
+            <input type="date" class="flight-booker__input js-trip-type__input-when">
+            <input type="date" class="flight-booker__input js-trip-type__input-back" disabled>
+            <button class="flight-booker__button js-trip-type__button-book">Book</button>
+        </div>
+        <div class="modal js-modal">
+            <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+            <p class="modal__text js-modal__text"></p>
+        </div>
+        <!-- Подложка под модальным окном -->
+        <div class="overlay js-overlay"></div>
+        <script src="main.js"></script>
+    </body>
+</html>
